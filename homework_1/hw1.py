@@ -38,10 +38,14 @@ def string_explosion(string):
         Hint: Try to use recursion.
     '''
 
+def string_explosion(string):
     if string == '':
         return ''
     else:
-        return string + string_explosion(string[1:])
+        if string == None:
+            return ''
+        else:
+            return string + string_explosion(string[1:])
 
 
 # Question 1(c)
